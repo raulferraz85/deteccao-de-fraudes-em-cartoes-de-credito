@@ -27,12 +27,23 @@ Arquivos
 - resultados.csv: avaliação de teste nos dois limiares.
 - validacao.csv: avaliação usada na seleção.
 - resumo.json: resumo calculado pelo notebook.
-Resultados reais da execução
+- `resumo.json`: resumo calculado pelo notebook.
+
+## Resultados reais da execução
+
 | Modelo | Limiar ajustado | Recall | Precisão | F1 | FP | FN |
 |---|---:|---:|---:|---:|---:|---:|
-| Regressão logística | 0.979828 | 80.00% | 55.07% | 0.6524 | 62 | 19 |
-| Random Forest | 0.245969 | 78.95% | 78.95% | 0.7895 | 20 | 20 |
-| XGBoost | 0.368799 | 82.11% | 50.65% | 0.6265 | 76 | 17 |
+| Regressão logística | 0,979828 | 80,00% | 55,07% | 0,6524 | 62 | 19 |
+| Random Forest | 0,245969 | 78,95% | 78,95% | 0,7895 | 20 | 20 |
+| XGBoost | 0,368799 | 82,11% | 50,65% | 0,6265 | 76 | 17 |
+
+**Como interpretar:**
+
+- **Recall:** porcentagem das fraudes que o modelo encontrou.
+- **Precisão:** porcentagem dos alertas que realmente eram fraudes.
+- **F1:** medida de equilíbrio entre precisão e recall.
+- **FP — falsos positivos:** transações normais marcadas como fraude.
+- **FN — falsos negativos:** fraudes que passaram sem serem detectadas.
 
 
 O XGBoost foi escolhido na validação: recall de 89,36% com precisão de 50,30%, contra recall de 88,30% dos demais. No teste, encontrou 78 das 95 fraudes, perdeu 17 e gerou 76 falsos alertas. Precisão de 50,65% significa que aproximadamente metade dos alertas era fraude.
