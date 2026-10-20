@@ -28,10 +28,11 @@ Arquivos
 - validacao.csv: avaliação usada na seleção.
 - resumo.json: resumo calculado pelo notebook.
 Resultados reais da execução
-Modelo	Limiar ajustado	Recall	Precisão	F1	FP	FN
-Regressão logística	0.979828	80.00%	55.07%	0.6524	62	19
-Random Forest	0.245969	78.95%	78.95%	0.7895	20	20
-XGBoost	0.368799	82.11%	50.65%	0.6265	76	17
+| Modelo | Limiar ajustado | Recall | Precisão | F1 | FP | FN |
+|---|---:|---:|---:|---:|---:|---:|
+| Regressão logística | 0.979828 | 80.00% | 55.07% | 0.6524 | 62 | 19 |
+| Random Forest | 0.245969 | 78.95% | 78.95% | 0.7895 | 20 | 20 |
+| XGBoost | 0.368799 | 82.11% | 50.65% | 0.6265 | 76 | 17 |
 
 
 O XGBoost foi escolhido na validação: recall de 89,36% com precisão de 50,30%, contra recall de 88,30% dos demais. No teste, encontrou 78 das 95 fraudes, perdeu 17 e gerou 76 falsos alertas. Precisão de 50,65% significa que aproximadamente metade dos alertas era fraude.
@@ -48,7 +49,7 @@ A divisão aleatória não representa previsão de transações futuras. Há pou
 Publicação e entrega
 Crie um repositório público na sua conta do GitHub, com nome como deteccao-fraudes-cartao, e envie o conteúdo desta pasta (não o ZIP nem o CSV original). Confira se o notebook e o README aparecem. Entregue o link da página inicial do repositório. Esta entrega de arquivos não significa que um repositório já foi publicado.
 Referências
-- TensorFlow: dataset e classificação desbalanceada
-- Scikit-learn: prevenção de vazamento de dados
-- SHAP: TreeExplainer
-- Enunciado fornecido nas imagens da atividade.
+Dataset e explicação do desbalanceamento — TensorFlow : https://www.tensorflow.org/tutorials/structured_data/imbalanced_data?hl=pt-br
+Prevenção de vazamento — scikit-learn : https://scikit-learn.org/stable/common_pitfalls.html
+SHAP TreeExplainer : https://shap.readthedocs.io/en/latest/generated/shap.TreeExplainer.html
+Enunciado do desafio
