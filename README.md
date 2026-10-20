@@ -3,7 +3,7 @@ Projeto educacional em Python que compara regressão logística, Random Forest e
 Problema
 O dataset contém 284.807 transações e 492 fraudes (cerca de 0,17%). Responder sempre “normal” dá aproximadamente 99,83% de acurácia, mas recall de fraude igual a zero. Por isso, o projeto prioriza recall e acompanha precisão, F1, falsos positivos, falsos negativos e Average Precision (AP).
 Como executar
-1. Abra deteccao_fraudes.ipynb no Google Colab (Arquivo → Fazer upload de notebook).
+1. Abra deteccao_fraudes.ipynb no Google Colab: https://colab.research.google.com/drive/1sHYDShC6sGJgZuMB7_yD8-59z5FAcNec?usp=sharing
 2. Execute as células em ordem, incluindo a instalação de dependências.
 3. Aguarde o treinamento. As saídas já salvas permitem inspecionar a execução entregue.
 Para executar localmente, use Python 3.12, instale requirements.txt com python -m pip install -r requirements.txt e abra o notebook em Jupyter ou no VS Code com suporte a notebooks. O editor/Jupyter deve ser instalado separadamente. A primeira célula instala as bibliotecas sem fixar versões para facilitar o Colab; requirements.txt registra as versões usadas nesta entrega. Versões diferentes podem gerar pequenas diferenças de resultado.
@@ -57,7 +57,11 @@ O que foi acrescentado ao roteiro
 Com base no enunciado disponibilizado: divisão explícita de validação, cuidado com duplicatas, regra documentada de limiar com piso de precisão, comparação dos limiares e contagem de FP/FN. O notebook original completo da professora não foi disponibilizado, então não é possível declarar diferenças exatas em relação ao código dela.
 Limitações e próximos passos
 A divisão aleatória não representa previsão de transações futuras. Há poucas fraudes nos conjuntos de avaliação, e diferenças pequenas podem ser instáveis. Próximos passos: validação temporal, comparação de undersampling e oversampling aplicados somente ao treino, busca de hiperparâmetros usando validação cruzada, calibração e análise de custos.
-Referências
+
+
+Referências:
+
+
 Dataset e explicação do desbalanceamento — TensorFlow : https://www.tensorflow.org/tutorials/structured_data/imbalanced_data?hl=pt-br
 Prevenção de vazamento — scikit-learn : https://scikit-learn.org/stable/common_pitfalls.html
 SHAP TreeExplainer : https://shap.readthedocs.io/en/latest/generated/shap.TreeExplainer.html
