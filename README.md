@@ -56,9 +56,7 @@ O notebook explica o XGBoost como referência de árvores, independentemente do 
 O que foi acrescentado ao roteiro
 Com base no enunciado disponibilizado: divisão explícita de validação, cuidado com duplicatas, regra documentada de limiar com piso de precisão, comparação dos limiares e contagem de FP/FN. O notebook original completo da professora não foi disponibilizado, então não é possível declarar diferenças exatas em relação ao código dela.
 Limitações e próximos passos
-A divisão aleatória não representa previsão de transações futuras. Há poucas fraudes nos conjuntos de avaliação, e diferenças pequenas podem ser instáveis. Próximos passos: validação temporal, comparação de undersampling e oversampling aplicados somente ao treino, busca de hiperparâmetros usando validação cruzada, calibração e análise de custos. O projeto não foi validado para uso em produção.
-Publicação e entrega
-Crie um repositório público na sua conta do GitHub, com nome como deteccao-fraudes-cartao, e envie o conteúdo desta pasta (não o ZIP nem o CSV original). Confira se o notebook e o README aparecem. Entregue o link da página inicial do repositório. Esta entrega de arquivos não significa que um repositório já foi publicado.
+A divisão aleatória não representa previsão de transações futuras. Há poucas fraudes nos conjuntos de avaliação, e diferenças pequenas podem ser instáveis. Próximos passos: validação temporal, comparação de undersampling e oversampling aplicados somente ao treino, busca de hiperparâmetros usando validação cruzada, calibração e análise de custos.
 Referências
 Dataset e explicação do desbalanceamento — TensorFlow : https://www.tensorflow.org/tutorials/structured_data/imbalanced_data?hl=pt-br
 Prevenção de vazamento — scikit-learn : https://scikit-learn.org/stable/common_pitfalls.html
